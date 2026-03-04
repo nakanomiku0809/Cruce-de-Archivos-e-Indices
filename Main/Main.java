@@ -48,6 +48,8 @@ System.out.println("Salir");
     op.read.nextInt();
     switch(op){
         case 1:
+            List<Producto> productos = leerProducto();
+            orden_precio(productos);
             break;
         case 2:
             //id,nombre,email

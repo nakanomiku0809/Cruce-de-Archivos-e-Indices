@@ -17,26 +17,41 @@ throws IOException {
 }
 
 //pedidos
-Path out = Paths.get("usuarios.csv");
+Path out = Paths.get("pedidos.csv");
 Files.createDirectories(out.getParent());
 
-public static void crearUsuario(Usuario usuario) 
-throws IOException {
-    FileWriter fw = new FileWriter("usuarios.csv", true);
+public static void crearPedido(Pedido pedido) throws IOException {
+    FileWriter fw = new FileWriter("pedidos.csv", true);
     BufferedWriter bw = new BufferedWriter(fw);
-    bw.write(usuario.toString());
+    bw.write(pedido.toString());
     bw.newLine();
     bw.close();
 }
 
-Path out = Paths.get("usuarios.csv");
+
+//productos
+Path out = Paths.get("productos.csv");
 Files.createDirectories(out.getParent());
 
-public static void crearUsuario(Usuario usuario) 
+public static void crearProducto(Producto producto) 
 throws IOException {
-    FileWriter fw = new FileWriter("usuarios.csv", true);
+    FileWriter fw = new FileWriter("productos.csv", true);
     BufferedWriter bw = new BufferedWriter(fw);
-    bw.write(usuario.toString());
+    bw.write(producto.toString());
+    bw.newLine();
+    bw.close();
+}
+
+
+//ventas 
+Path out = Paths.get("total_ventas.csv");
+Files.createDirectories(out.getParent());
+
+public static void crearVenta(Venta venta) 
+throws IOException {
+    FileWriter fw = new FileWriter("total_ventas.csv", true);
+    BufferedWriter bw = new BufferedWriter(fw);
+    bw.write(venta.toString());
     bw.newLine();
     bw.close();
 }
