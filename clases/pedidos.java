@@ -17,4 +17,11 @@ public class Pedidos {
     public String toString() {
         return id + "," + cliente_id + "," + producto_id + "," + cantidad + "," + fecha;
     }
+
+    // Getters
+    public int getId() { return id; }
+    public int getClienteId() { return cliente_id; }
+    public int getProductoId() { return producto_id; }
+    public int getCantidad() { return cantidad; }
+    public String getFecha() { return fecha; }
 }

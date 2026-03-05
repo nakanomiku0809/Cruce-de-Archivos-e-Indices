@@ -17,4 +17,11 @@ public class Productos {
     public String toString() {
         return id + "," + nombre + "," + categoria + "," + precio + "," + stock;
     }
+
+    // Getters
+    public int getId() { return id; }
+    public String getNombre() { return nombre; }
+    public String getCategoria() { return categoria; }
+    public float getPrecio() { return precio; }
+    public int getStock() { return stock; }
 }
